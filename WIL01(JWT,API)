@@ -1,0 +1,31 @@
+JWT(Token 기반 인증 방식) 
+JWT (JSON Web Token) 는 인증에 필요한 정보들을 암호화시킨 토큰이며 주로 회원 인증이나 정보 전달에 사용된다.
+세션/쿠키 방식과 유사하게 사용자는 Access Token (JWT Token) 을 HTTP 헤더에 실어 서버에 전송
+토큰은 임의로 생성된 비밀번호 같이 동작
+제한된 수명을 가지고, 새로운 토큰은 한번 만료되면 새로 생성되어야한다(Refresh Token)
+
+JWT는 Header / Payload / Verify Signature Json 형태인 세 부분으로 구성되어있다.
+1. Header - 암호화할 방식(alg), 타입(Type) 등
+2. Payload - 서버에서 보낼 데이터
+3. Verify Signature - Base64 방식으로 인코딩한 Header, Payload, Secret key 를 더한 후 서명
+
+참고
+https://velog.io/@junghyeonsu/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%90%EC%84%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%9D%84-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95
+
+=================================================================================
+
+API(Application Programming Interface)
+애플리케이션 소프트웨어를 빌드하고 통합하기 위한 정의 및 프로토콜 세트인 애플리케이션 프로그래밍 인터페이스
+
+어떠한 응용프로그램에서 데이터를 주고 받기 위한 방법
+어떤 특정 사이트에서 특정 데이터를 공유할 경우 어떠한 방식으로 정보를 요청해야 하는지, 그리고 어떠한 데이터를 제공 받을 수 있을지에 대한 규격
+데이터를 주고 받기 위한 방법과 그 규격 
+
+ex)환율 정보, 미세먼지 정보, 날씨 정보 등등
+
+참고
+https://dev-dain.tistory.com/50
+
+
+
+
